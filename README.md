@@ -8,7 +8,7 @@ En esta práctica crearemos una red en Virtual Box para conectar en ella las má
 
 Para crear la red, lo primero que vamos a hacer es irnos a archivo, luego a herramientas y haremos clic en Network manager. Luego crearemos una Red NAT, para conectar las distintas máquinas virtuales:
 
-![](img\img1.png)
+![](img/img1.png)
 
 
 
@@ -18,7 +18,7 @@ Además de esto habilitaremos el DHCP, para que reparta las IP:
 
 
 
-![](img\img2.png)
+![](img/img2.png)
 
 
 
@@ -28,7 +28,7 @@ Una vez hecho esto tendremos que configurar cada máquina:
 
 Para configurar la máquina pulsaremos sobre ella y el botón configuración en el apartado de red estableceremos Red NAT y seleccionaremos nuestra red (REDPRUEBA)
 
-![](img\img3.png)
+![](img/img3.png)
 
 Una vez configurada procederemos a iniciarla, una vez se ha iniciada abriremos una pantalla de comandos y observaremos si se ha hecho correctamente con el comando ipconfig:
 
