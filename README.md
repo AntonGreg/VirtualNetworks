@@ -60,5 +60,37 @@ Luego de darle a Inbound Rules buscamos *File and printer Sharing (IPV4)*:
 
 ![](img/img9.png)
 
-Y activamos, y así con Windows 10 tambien.
+Y activamos, y así con Windows 10 también habilitamos la opción de compartir datos en impresoras y dispositivos.
+
+### CentOS
+
+La primera parte de la configuración es igual a las anteriores:
+
+![](img/img10.png)
+
+Ahora los siguientes pasos son totalmente diferentes a los anteriores procesos ya que CentOS usa un lenguaje algo distinto.
+
+Para empezar usaremos el comando ip route para ver la información del adaptador de red:
+
+![](img/img11.png)
+
+Podemos ver que el DHCP asigna a esta máquina la dirección 196.168.6.6, con la misma puerta de enlace que las anteriores.
+
+Hacemos ping a la página de Google, obteniendo el siguiente resultado:
+
+![](img/img12.png)
+
+Tecleamos *ctrl + c* para parar el escaneo del ping. Como podemos ver esta máquina tiene salida a internet, probamos a intentar hacer ping a una de las otras máquina y viceversa.
+
+Desde CentOS a Windows 10:
+
+![](img/img13.png)
+
+Y a Windows server 2019:
+
+![](img/img14.png)
+
+Podemos ver ya como nuestra red esta totalmente habilitada entre las 3 maquinas virtuales.
+
+## Diagrama
 
