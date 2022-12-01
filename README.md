@@ -94,3 +94,7 @@ Podemos ver ya como nuestra red esta totalmente habilitada entre las 3 maquinas 
 
 ## Diagrama
 
+![](img/img15.png)
+
+
+
