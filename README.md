@@ -30,9 +30,35 @@ Para configurar la máquina pulsaremos sobre ella y el botón configuración en 
 
 ![](img/img3.png)
 
-Una vez configurada procederemos a iniciarla, una vez se ha iniciada abriremos una pantalla de comandos y observaremos si se ha hecho correctamente con el comando ipconfig:
+Una vez configurada procederemos a iniciarla, una vez se ha iniciada abriremos una pantalla de comandos y observaremos si se ha hecho correctamente con el comando *ipconfig*:
+
+![](img/img4.png)
 
 
 
+Como se puede observar en la imagen la red se ha configurado de manera correcta, esta en concreto tiene la dirección IP 10.0.2.15, la puerta de enlace es 10.0.2.1, después para comprobar que hay salida a internet usamos el comando *ping* y como se puede ver la conexión se realiza de forma satisfactoria.
 
+### Windows Server 2019
+
+![](img/img5.png)
+
+Para el Windows Server la instalación es igual a la de Windows 10.
+
+![](img/img6.png)
+
+
+
+En esta ocasión vemos que el DHCP ha asignado a esta máquina la dirección 10.0.2.4, teniendo la misma máscara y puerta de enlace.
+
+Antes de hacer ping las maquinas mutuamente, debemos activar unos ajustes en el Firewall de Windows para que se puedan conectar, seguiremos así estos pasos tanto en Windows Server 2019 como en Windows 10:
+
+![](img/img7.png)
+
+![](img/img8.png)
+
+Luego de darle a Inbound Rules buscamos *File and printer Sharing (IPV4)*:
+
+![](img/img9.png)
+
+Y activamos, y así con Windows 10 tambien.
 
